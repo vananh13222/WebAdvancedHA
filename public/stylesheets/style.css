@@ -11359,6 +11359,11 @@ h5,
     color: white;
 }
 
+.messages-p-3 {
+    background-color: #1877F2;
+    border-radius: 14px;
+}
+
 .ap {
     color: white;
     text-decoration: underline white solid;
@@ -11615,4 +11620,39 @@ h5,
     background-color: #F2F3F5;
     padding: 1px 8px 1px 8px;
     margin-left: 5px;
+}
+
+.rc5 {
+    width: 200;
+    height: 200;
+    border-radius: 10px;
+    border-color: #4c4c4c;
+    border-style: solid;
+}
+
+.btn1 {
+    min-width: 35px;
+}
+
+.ct2 {
+    color: black;
+    font-size: 32px;
+}
+
+.url {
+    color: black;
+    text-decoration: underline black;
+    padding: 8px;
+}
+
+.if3 {
+    max-height: 200px;
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.vdc {
+    max-width: 70%;
+    max-height: 70%;
+    float: left;
 }
