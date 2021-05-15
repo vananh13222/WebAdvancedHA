@@ -13,11 +13,11 @@
 
 <body>
     <%- include('navbar') -%>
-    <div class="container-fluid gedf-wrapper">
+    <div class="container-fluid gedf-wrapper ">
         <div class="row">
             <!--Left screen-->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-3 ">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <div class="h5"><%=userSession.name%></div>
                         <div class="h7 text-muted">Fullname : <%=userSession.fullname%></div>
@@ -38,10 +38,10 @@
                 </div>
             </div>
             <!--Mid screen-->  
-            <div class="col-md-6 gedf-main">
+            <div class="col-md-6 gedf-main ">
                 <!-- create post-->
                 <form action="/createPost" method="POST" enctype="multipart/form-data" id="createPost" >
-                    <div class="card gedf-card">
+                    <div class="card gedf-card shadow p-3 mb-5 bg-white rounded">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
@@ -103,7 +103,7 @@
                 <% if(posts.length > 0) {
                     posts.forEach(post => {  %>
                 <form id="<%=post._id%>">
-                    <div class="card gedf-card " id="card_full">
+                    <div class="card gedf-card shadow p-3 mb-5 bg-white rounded" id="card_full">
                         <div class="card-header">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -231,7 +231,7 @@
         <!--Right screen-->
          <div class="col-md-3">
             <!-- Card 1-->
-            <div class="card gedf-card" style="height: 350px;">
+            <div class="card gedf-card shadow-lg p-3 mb-5 bg-white rounded" style="height: 350px;">
                     <div class="card-header" style="text-align: center;">
                         <p style="font-size: 2.5vw;">Thông báo</p>    
                     </div>
@@ -241,7 +241,7 @@
                     </div>
             </div>
             <!--End Card 1-->
-            <div class="card" style="min-height: 500px;">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="min-height: 500px;">
                 <div class="header" style="border-bottom: solid #e5e5e5 1px;">
                     <p style="color: #7f7f7f;text-align: center; margin-top: 10px;">Người liên hệ</p>
                 </div>

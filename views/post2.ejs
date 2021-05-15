@@ -73,7 +73,7 @@
                                 about <%=day-post.date.day%> d ago
                                 <%} %>
                             </i></div>
-                        <a class="card-link" href="/post/<%= post._id %>">
+                        <a class="card-link " href="/post/<%= post._id %>">
                             <p class="card-text" style="color: black;font-size: 32px;"><%=post.description%></p>
                             <% if(post.image!="") { %>
                             <img src="/public/image/<%= post.image %>"
