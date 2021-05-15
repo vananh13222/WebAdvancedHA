@@ -11373,10 +11373,7 @@ h5,
     height: 39px;
 }
 
-.rc1 {
-    width: 35;
-    height: 35;
-}
+
 
 .messages-p-3 {
     background-color: #F2F3F5;
@@ -11609,10 +11606,7 @@ h5,
     font-size: 18px;
 }
 
-.rc4 {
-    width: 32;
-    height: 32;
-}
+
 
 .cmt {
     border-radius: 12px;
@@ -11655,4 +11649,19 @@ h5,
     max-width: 70%;
     max-height: 70%;
     float: left;
+}
+.botron{
+    border-radius: 50%;
+}
+.rc6{
+    width: 45px;
+    height: 45px;
+}
+.rc1 {
+    width: 35;
+    height: 35;
+}
+.rc4 {
+    width: 32;
+    height: 32;
 }

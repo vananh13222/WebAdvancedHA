@@ -16,7 +16,8 @@
     socket.on("serverSend", (data) => {
             var param = document.createElement("p");
             param.innerHTML = `<div class="d-flex flex-row align-items-start pd" >
-            <img class="rounded-circle rc4" src="/public/image/avatar/${data.avatarcomment}" >
+            <img class="rounded-circle" src="/public/image/avatar/${data.avatarcomment}"width="32"
+                height="32" >
                 <div class ="cmt">
                     <a href="/profile/${data.commentuser}"
                 class ="pd">${data.commentuser}</a>

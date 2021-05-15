@@ -1,4 +1,6 @@
-
+//gg
+require('dotenv').config()
+//normal
 const url = require('./models/db_config.js');
 const express = require("express");
 const app = express();
@@ -7,6 +9,16 @@ const io = require("socket.io")(server);
 const mongodb = require("mongodb");
 const routes = require('./routes');
 const link_preview = require('kahaki');
+//google 
+const passport = require('passport');
+const cookieSession = require('cookie-session')
+require('./passport-setup');
+//google auth
+app.use(cookieSession({
+    name: 'tuto-session',
+    keys: ['key1', 'key2']
+  }))
+
 //connect to DB 
 const MongoClient = mongodb.MongoClient;
 app.use(function (req, res, next) {
@@ -18,6 +30,30 @@ app.use("/public", express.static(__dirname + "/public"));
 app.set('view-engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use("/", routes);
+
+// Auth middleware that checks if the user is logged in
+const isLoggedIn = (req, res, next) => {
+    if (req.user) {
+        next();
+    } else {
+        res.sendStatus(401);
+    }
+}
+// Initializes passport and passport sessions
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+// Auth Routes
+app.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+app.get('/google/callback', passport.authenticate('google', { failureRedirect: '/failed' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('/newfeed');
+  }
+);
+
 // real-time in post
 io.on("connection", (socket) => {
     socket.on("new_user", data => {
