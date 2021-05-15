@@ -1,7 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- BOX ICONS CSS-->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
 <div class="navbar navbar-expand-lg navbar-light bg-light">
     <!--<a class="navbar-brand" href="/newfeed" style="color: blue;">HASocialNet</a>-->
     <a href="/newfeed" class="logo">
-        <img class="w-25 p-3" src="/public/image/logo icon/logo_icon.png" >
+        <img class=" w-25 p-3" src="/public/image/logo icon/logo_icon.png" >
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,19 +16,23 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="nav justify-content-center">
+            <!--New Feed icon-->
             <li class="nav-item active">
-                <a class="nav-link" href="/newfeed">Newfeed <span class="sr-only"></span></a>
+                <a class="nav-link" href="/newfeed"><i class="bx bxs-home"></i><span class="sr-only"></span></a> 
             </li>
+            <!--Profile icon-->
             <li class="nav-item">
             <li>
-                <a class="nav-link" href="/profile/<%=userSession.name%>"> Profile
+                <a class="nav-link" href="/profile/<%=userSession.name%>"> <i class="bx bx-user"></i>
+                    
                 </a>
             </li>
 
             </li>
+            <!--Message icon-->
             <li class="nav-item">
-                <a class="nav-link" href="/message">Message</a>
+                <a class="nav-link" href="/message"><i class="bx bx-chat"></i></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
