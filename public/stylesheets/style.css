@@ -11486,3 +11486,133 @@ h5,
 .fbm {
     font-size: 40px;
 }
+
+.ct {
+    color: black;
+    font-size: 32px;
+}
+
+.pimg {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.tll {
+    margin-top: 20px;
+}
+
+.like {
+    color: blue;
+    cursor: pointer;
+}
+
+.dislike {
+    color: #777474;
+    cursor: pointer;
+}
+
+.like_count {
+    display: none;
+}
+
+.cs {
+    text-align: center;
+}
+
+.cl {
+    color: #777474;
+}
+
+.mail {
+    text-align: right;
+}
+
+.gedf-card {
+    height: 350px;
+}
+
+.ch {
+    text-align: center;
+}
+
+.noti {
+    font-size: 2.5vw;
+}
+
+.ttl1 {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.cs1 {
+    min-height: 500px;
+}
+
+.hder {
+    border-bottom: solid #e5e5e5 1px;
+}
+
+.contact {
+    color: #7f7f7f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fl {
+    padding: 10px;
+}
+
+.sp2 {
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+
+.rc3 {
+    max-width: 9%;
+}
+
+.icon_7 {
+    color: #0ad10a;
+    font-size: 10px;
+}
+
+.icon_8 {
+    color: #7f7f7f;
+    font-size: 10px;
+}
+
+.ct1 {
+    color: black;
+    font-size: 32px;
+}
+
+.pi {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.ttl2 {
+    margin-top: 20px;
+}
+
+.pd {
+    font-size: 18px;
+}
+
+.rc4 {
+    width: 32;
+    height: 32;
+}
+
+.cmt {
+    border-radius: 12px;
+    border: 2px solid #e6e7e9;
+    background-color: #F2F3F5;
+    padding: 1px 8px 1px 8px;
+    margin-left: 5px;
+}
