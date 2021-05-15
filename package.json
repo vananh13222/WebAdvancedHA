@@ -11,7 +11,6 @@
     "http": "*",
     "kahaki": "^0.0.6",
     "link-preview-js": "^2.1.6",
-    "mogoose": "*",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.9",
     "multer": "^1.4.2",
