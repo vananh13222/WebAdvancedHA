@@ -26,7 +26,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="mr-2">
-                                        <img class="rounded-circle" width="45" height="45" src="/public/image/avatar/<%=post.avatar%>" alt="">
+                                        <img class="botron rc6" src="/public/image/avatar/<%=post.avatar%>" alt="">
                                     </div>
                                     <div class="ml-2">
                                         <div class="h5 m-0">
@@ -134,7 +134,7 @@
                             post.comment.forEach(com=>{ %>
                                         <p>
                                             <div class="d-flex flex-row align-items-start pd">
-                                                <img class="rounded-circle rc4" src="/public/image/avatar/<%=com.avatarcomment%>">
+                                                <img class="botron rc6" src="/public/image/avatar/<%=post.avatar%>" alt="">
 
                                                 <div class="cmt">
                                                     <a href="/profile/<%=com.commentuser%>" class="pd">
@@ -152,7 +152,7 @@
                         </div>
                         <form id="commentForm">
                             <div id="collapse-1" class="bg-light p-2 collapse show" data-parent="#myGroup">
-                                <div class="d-flex flex-row align-items-start"><img class="rounded-circle rc1" src="/public/image/avatar/<%=userSession.avatar%>">
+                                <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="/public/image/avatar/<%=userSession.avatar%>"width="35" height="35">
                                     <div class="input-group ">
                                         <input type="text" id="commentInput" class="form-control " placeholder="Write a comment...">
                                         <span class="input-group-btn p-l-10">
