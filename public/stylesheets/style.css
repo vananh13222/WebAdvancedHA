@@ -11665,3 +11665,15 @@ h5,
     width: 32;
     height: 32;
 }
+.profile-header .profile-header-cover {
+    height: 390px;
+    background-image: url(/public/image/background/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
