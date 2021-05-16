@@ -17,7 +17,7 @@ const MongoClient = mongodb.MongoClient;
 var newfeed = {
     get: (req, res) => {
         MongoClient.connect(url, (err, db) => {
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             dbo.collection("posts").find().sort({ index: -1 }).toArray((err, post) => {
                 dbo.collection("users").findOne({ name: req.session.user }, (err, user) => {
                     res.render("newfeed2.ejs", {

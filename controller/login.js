@@ -20,7 +20,7 @@ var login = {
         MongoClient.connect(url, (err, db) => {
             if (err) { console.log(err) };
             // check user in database
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("myFirstDatabase");
             dbo.collection("users").find({ name: req.body.username }).toArray((err, user) => {
                 if (err) { console.log(err) };
                 // not have user

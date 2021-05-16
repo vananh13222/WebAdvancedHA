@@ -18,7 +18,7 @@ var message = {
     get: (req, res) => {
         MongoClient.connect(url, (err, db) => {
             if (err) console.log(err);
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             dbo.collection("users").findOne({ name: req.session.user }, (err, userSession) => {
                 res.render("message_list.ejs", {
                     userSession: req.session.user,

@@ -17,7 +17,7 @@ const send_mes = require("../controller/send_mes.js");
 const signup = require("../controller/signup.js");
 const editprofile = require("../controller/editprofile.js");
 const createpost = require("../controller/createpost.js");
-
+const { mongo, Mongoose } = require("mongoose");
 // path
 const path = "D:/hoctap/FINAL WEBADVANTED/tee/Project-1-Social-Network-branch1";
 //set session
@@ -76,5 +76,10 @@ router.post('/send_message/link_text',(req,res)=>{
             mess:req.body.mess
         })
      })();
-})
+});
+router.delete('/post/:id', async (req,res) => {
+    const post= await post.deleteOne({_id: new Mongodb.ObjectId(req.params.id)});
+    res.redirect('/newfeed')
+    })
+
 module.exports = router

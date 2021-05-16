@@ -16,7 +16,7 @@ const MongoClient = mongodb.MongoClient;
 var add_friend = {
     post: (req, res) => {
         MongoClient.connect(url, (err, db) => {
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             dbo.collection("users").findOne({ name: req.session.user }, (err, userSession) => {
                 dbo.collection("users").findOne({ name: req.params.username }, (err, userProfile) => {
                     dbo.collection("users").updateOne({ name: req.session.user }, {

@@ -19,7 +19,7 @@ var posts = {
             MongoClient.connect(url, (err, db) => {
                 if (err) console.log(err);
                 var id = req.params.id;
-                let dbo = db.db("webadvantedha");
+                let dbo = db.db("wedadvancedha");
                 dbo.collection("posts").findOne({ _id: mongodb.ObjectId(id) }, (err, result) => {
                     dbo.collection("users").findOne({ name: req.session.user }, (err, user) => {
                         res.render("post2.ejs", {

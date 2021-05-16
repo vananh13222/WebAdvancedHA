@@ -22,7 +22,7 @@ var send_mes = {
             userReceive: req.params.user
         }
         MongoClient.connect(url, (err, db) => {
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             // find user send
             dbo.collection("users").findOne({ name: req.params.userSession }, (err, userSession) => {
                 if (err) console.log(err);

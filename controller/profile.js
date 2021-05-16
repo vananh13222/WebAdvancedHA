@@ -17,7 +17,7 @@ var profile = {
     get: (req, res) => {
         MongoClient.connect(url, (err, db) => {
             if (err) console.log(err);
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             // check user
             dbo.collection("users").findOne({ name: req.params.username }, (err, userProfile) => {
                 if (req.session.user == req.params.username) {

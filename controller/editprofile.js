@@ -17,7 +17,7 @@ var editprofile = {
     get: (req, res) => {
         MongoClient.connect(url, (err, db) => {
             if (err) console.log(err);
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             dbo.collection("users").findOne({ name: req.session.user }, (err, result) => {
                 res.render("editprofile.ejs", {
                     user: result
@@ -27,7 +27,7 @@ var editprofile = {
     },
     post: (req, res) => {
          MongoClient.connect(url,async (err, db) => {
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             if (req.file) {
                 let query = {
                     $set: {

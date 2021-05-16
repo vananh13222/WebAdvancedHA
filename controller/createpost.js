@@ -18,7 +18,7 @@ var createpost = {
     post: (req, res) => {
         MongoClient.connect(url, (err, db) => {
             if (err) { console.log(err) };
-            let dbo = db.db("webadvantedha");
+            let dbo = db.db("wedadvancedha");
             dbo.collection("users").findOne({ name: req.session.user }, (err, result) => {
                 //check file is exist ??? If not set image = ""
                 if (req.file) {

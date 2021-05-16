@@ -35,7 +35,7 @@ var signup = {
                 let user = new User(temp);
                 console.log("Password user signup: " + req.body.password);
                 // connect database
-                let dbo = db.db("webadvantedha");
+                let dbo = db.db("wedadvancedha");
                 dbo.collection("users").find({ name: req.body.username }).toArray((err, result) => {
                     if (err) { console.log(err) };
 
